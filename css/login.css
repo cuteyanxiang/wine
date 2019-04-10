@@ -1,0 +1,705 @@
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+div,
+address,
+blockquote,
+iframe,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+th,
+td,
+form,
+legend,
+fieldset,
+input,
+button,
+select,
+textarea,
+em,
+i {
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	word-break: break-all
+}
+
+input {
+	font: 12px/1.5 Arial, Verdana, 'SimSun';
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	border: 0 none;
+	font-size: 0;
+	vertical-align: top
+}
+
+body {
+	color: #545454;
+	background: #f2f2f2;
+	font: 12px/1.5 Arial, Verdana, 'SimSun';
+	_background-image: url(about:blank);
+	/* for IE6 */
+	_background-attachment: fixed;
+}
+
+.cl {
+	zoom: 1;
+}
+
+.cl:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden
+}
+
+.clr {
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: #e4393c;
+	text-decoration: underline
+}
+
+a:link,
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+.w {
+	width: 900px;
+	padding: 0;
+	margin: 0 auto;
+	zoom: 1;
+}
+
+#logo {
+	padding: 10px 0;
+	float: none;
+	margin: 0;
+	position: relative;
+}
+
+#logo b {
+	position: absolute;
+	background: url(../dist/img/login-all-bg.png) 0 -131px no-repeat;
+	width: 111px;
+	height: 46px;
+	top: 18px;
+	margin-left: 20px;
+}
+
+#entry {
+	width: 890px;
+	height: 402px;
+	border: 5px solid #e8e8e8;
+	border-radius: 3px;
+	margin: 55px auto 0;
+	position: relative;
+}
+
+#entry .mc {
+	border: 1px solid #e1e1e1;
+	background: #ffffff;
+	height: 400px;
+}
+
+#entry-bg {
+	width: 460px;
+	height: 400px;
+	float: left;
+	background: url(../images/login-banner.png) no-repeat;
+	background-size: cover;
+}
+
+#entry-bg img {
+	width: 460px;
+	height: 400px;
+}
+
+
+#entry .item {
+	line-height: 26px;
+	overflow: visible;
+	width: 320px;
+	z-index: 1;
+}
+
+#entry .fore2 {
+	z-index: 8;
+}
+
+#entry .fore3 {
+	z-index: 6;
+	height: 50px;
+	margin-top: 5px;
+}
+
+#entry .fore4 a {
+	color: #98999a;
+}
+
+#entry .item span {
+	position: absolute;
+	color: #b2b3b6;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+	left: 40px;
+	z-index: 1;
+	font-family: simsun;
+	font-size: 14px;
+}
+
+
+#entry .item .item-ifo .text-area {
+	width: 318px;
+	height: 38px;
+	border: 1px solid #b8c1c8;
+	position: relative;
+}
+#entry .text-1 {
+	width: 100px;
+	float: left;
+}
+
+#entry .img img {
+	margin: 0 5px;
+	cursor: pointer;
+	height: 33px;
+	display: block;
+}
+
+.form .hline {
+	line-height: 16px;
+}
+
+.login-prm {
+	color: #84939c;
+	padding: 0 10px;
+	line-height: 23px;
+	background-image: url("../Images/lg_bg.png");
+	background-repeat: no-repeat;
+	width: 301px;
+	height: 52px;
+	margin: 20px 0
+}
+
+.login-prm span {
+	color: #384751;
+	padding: 0 3px;
+}
+
+.ftx13,
+.flk13 a:link,
+.flk13 a:visited,
+a.flk13:link,
+a.flk13:visited {
+	color: #005AA0;
+}
+.form label,
+.form input,
+.form select,
+.form textarea,
+.form button,
+.form .label {
+	float: left;
+	font-size: 12px;
+}
+
+#entry .focus {
+	color: #999;
+	line-height: 22px;
+	display: none;
+}
+
+#entry .blank {
+	display: none;
+	float: none;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 9px;
+	right: 8px;
+	z-index: 10;
+	padding: 2px;
+}
+
+
+#entry .checkbox {
+	margin: 7px 12px 3px 0;
+	vertical-align: middle;
+}
+
+#entry .mar {
+	margin-right: 10px;
+}
+
+#entry .login-btn2013 {
+	height: 52px;
+}
+
+#entry .null,
+#entry .error,
+#loginname_error.error,
+#loginpwd_error.error,
+#authcode_error.error {
+	width: 316px;
+	padding: 2px 0 2px 3px;
+	border: 1px solid #ffbdbf;
+	color: #e6393d;
+	background: #ffebec;
+	line-height: 16px; 
+	z-index: 100;
+	margin: 10px 0;
+}
+
+#entry .btn-entry {
+	background-color: #f6342f;
+	border: medium none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-family: "Microsoft YaHei";
+	font-size: 18px;
+	height: 43px;
+	line-height: 43px;
+	overflow: hidden;
+	width: 321px;
+	letter-spacing: 5px;
+}
+
+#entry .btn-entry:hover {
+	background-color: #ff3b36;
+}
+
+#entry .login-bind-btn {
+	margin-top: 30px;
+}
+
+#entry .btn-bind-id {
+	width: 156px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	background-color: #f6342f;
+	border: 0 none;
+	border-radius: 3px;
+	font-size: 19px;
+	color: #fff;
+	font-family: 'microsoft yahei';
+	cursor: pointer;
+}
+
+#entry .btn-bind-id:hover {
+	background-color: #ff3b36;
+}
+
+#entry .login-bind-btn .ftx24 {
+	display: inline-block;
+	margin: 10px 0 0 15px;
+}
+
+#entry .ftx24 {
+	color: #6a7c86;
+	float: left;
+	font-size: 13px;
+}
+
+#entry .coagent .btns {
+	float: left;
+	height: 31px;
+	width: 34px;
+	margin-right: 15px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+#entry .coagent .btns .img2 {
+	display: none;
+}
+
+#entry .coagent .btns .img1 {
+	display: block;
+}
+
+#entry .coagent .btns a:hover .img1 {
+	display: none
+}
+
+#entry .coagent .btns a:hover .img2 {
+	display: block
+}
+.free-regist {
+	float: right;
+}
+
+.free-regist a {
+	color: #698fc2;
+	text-decoration: none
+}
+
+#mb-bg {
+	background: url(../Images/login-all-bg.png) no-repeat;
+	height: 59px;
+	width: 853px;
+}
+
+.mb {
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
+#footer {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#footer .links a,
+#footer .links span {
+	margin: 0 10px;
+}
+
+#footer .copyright {
+	margin: 10px 0;
+}
+
+
+/*20161206 xww 改*/
+#entry .tab_content {
+	float: left;
+	margin-left: 55px;
+	overflow: hidden;
+	height: 354px;
+	width: 321px;
+	overflow: hidden;
+	position:relative;
+}
+.tips {
+	position: relative;
+	background: #fef4e5;
+	color: #666;
+	border: 1px solid #f6c090;
+	width: 286px;
+	padding: 3px 0 3px 30px;
+	line-height: 15px;
+	height: auto;
+	margin-bottom: 10px;
+}
+.tips i {
+	display: block;
+	width: 16px;
+	height: 17px;
+	overflow: hidden;
+	background: url(../Images/pwd_icons.png) -104px -133px no-repeat;
+	position: absolute;
+	left: 10px;
+	z-index: 5;
+}
+.tips_error {
+	position: relative;
+	background: #ffebeb;
+	color: #e4393c;
+	border: 1px solid #faccc6;
+	width: 286px;
+	padding: 3px 0 3px 30px;
+	line-height: 15px;
+	height: auto;
+	margin-bottom: 10px;
+}
+.tips_error i {
+	display: block;
+	width: 16px;
+	height: 17px;
+	overflow: hidden;
+	background: url(../Images/pwd_icons.png) -104px -49px no-repeat;
+	position: absolute;
+	left: 10px;
+	z-index: 5;
+}
+#entry .fore1 {
+	z-index: 10;
+	margin-bottom: 10px;
+	height: 38px;
+}
+
+#entry .item .item-ifo {
+	width: 100%;
+	position:relative;
+}
+
+#entry .item-ifo .ico {
+	position: absolute;
+	z-index:5;
+}
+#entry .item-ifo .ico.i-name {
+	width: 38px;
+	height: 38px;
+	display: block;
+	float:left;
+	background: url(../Images/pwd_icons.png) 0px 0px no-repeat;
+}
+#entry .item-ifo .ico.i-name.focus{
+	background: url(../Images/pwd_icons.png) 0px -48px no-repeat;
+}
+#entry .item-ifo .ico.i-pass {
+	width: 38px;
+	height: 38px;
+	display: block;
+	float:left;
+	background: url(../Images/pwd_icons.png) -48px 0px no-repeat;
+}
+#entry .item-ifo .ico.i-pass.focus{
+	background: url(../Images/pwd_icons.png) -48px -48px no-repeat;
+}
+#entry .text {
+	float:left;
+	position: relative;
+	height: 36px;
+	width:275px;
+	margin-left:39px;
+	line-height:36px;
+	font-size: 14px;
+	font-family: arial, SimSun;
+	color: #4a4a4f;
+	text-indent:14px;
+	border:none;
+}
+#entry .fore4 {
+	height: 37px;
+	margin-top: 10px;
+	z-index: 3;
+	color: #98999a;
+}
+#entry .item .item-ifo .fog {
+	display: inline-block;
+	float: right;
+	position: relative;
+	right: 4px;
+	color: #98999a;
+}
+#entry .item a:hover{
+	color:#b61d1d;
+	text-decoration:underline;
+}
+.coagent {
+	position:absolute;
+	right:1px;
+	bottom:1px;
+    padding-right: 20px;
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    height: auto;
+    width:386px;
+    background-color: #fcfcfc;
+    text-align:left;
+}
+.coagent ul{
+	margin-left:60px;
+}
+.coagent li {
+    float: left;
+    position:relative;
+}
+.coagent li:hover a span,.coagent li:hover a{
+	color:#b61d1d;
+	text-decoration:underline;
+}
+.coagent li .line {
+    color: #ccc;
+    padding: 0 10px;
+}
+.coagent li a b.QQ-icon {
+    width: 19px;
+    height: 18px;
+    display: block;
+    background:url(../Images/icon-qww.png) -21px 0 no-repeat;
+   /* position: absolute;*/
+    float: left;
+    margin:15px 0px 0 0;
+}
+.coagent li a b.weixin-icon {
+    width: 19px;
+    height: 18px;
+    display: block;
+    background:url(../Images/icon-qww.png) -40px 0 no-repeat;
+   /* position: absolute;*/
+    float: left;
+    margin:15px 0px 0 0;
+}
+.coagent li a b.weibo-icon {
+    width: 19px;
+    height: 18px;
+    display: block;
+    background:url(../Images/icon-qww.png) 0px 0 no-repeat;
+   /* position: absolute;*/
+    float: left;
+    margin:15px 0px 0 0;
+}
+.coagent li a span{
+	float:left;
+	padding-left:10px;
+}
+.icon_error{
+	display:block;
+	width:13px;
+	height:13px;
+	position:absolute;
+	top:13px;
+	right:15px;
+	background:url(../Images/pwd_icons.png) -104px 0 no-repeat;
+}
+.hidden{
+	display:none;
+}
+.regist-link b{
+	display:block;
+	width:16px;
+	height:16px;
+	background:url(../Images/pwd_icons.png) -104px -75px no-repeat;
+	margin:17px 5px 0 0;
+	float:left;
+}
+.regist-link a{
+	font-size:18px;
+	color:#b61d1d;
+	float:left;
+	font-family:"microsoft yahei";
+}
+.form h1{
+	height:55px;
+	line-height:55px;
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+	color:#e4393c;
+	font-family:"microsoft yahei";
+}
+.tab_tit{
+	height:54px;
+	border-bottom:1px solid #fbfbfb;
+}
+.tab_tit li{
+	height:54px;
+	line-height:54px;
+	width:160px;
+	text-align:center;
+	float:left;
+}
+.tab_tit li a{
+	font-size:18px;
+	width:160px;
+	display:block;
+	line-height:18px;
+	margin:18px 0;
+	font-family: "微软雅黑";
+}
+.tab_tit li.active a{
+	font-weight:bold;
+	color:#e54b54;
+}
+.tab_tit li a.sao{
+	border-right:1px solid #CCCCCC;
+}
+.saom_login{
+	width:172px;
+	margin:20px auto 0;
+}
+.saom_login p{
+	width:159px;
+	height:159px;
+	border:1px solid #f1f1f1;
+	/*padding:12.5px;*/
+}
+.saom_login span{
+	color: #aaaaaa;
+	font-size:12px;
+	height:45px;
+	line-height:45px;
+}
+.saom_login span a{
+	color:#e54b54;
+}
+.tab_cont span img{
+	padding-left:45px;
+}
+.tab_cont{
+	height:263px;
+}
+.tip-box {
+    display:none;
+}
+ .succ-icon {
+    background:url("../../Web/Images/qrcode-succ-2016.png") no-repeat scroll 0 0;
+    display: block;
+    height: 71px;
+    margin: 35px auto 25px auto;
+    width: 71px;
+}
+.item-fore h3 {
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+.ftx-03{
+    text-align: center;
+    color: #acacac;
+}

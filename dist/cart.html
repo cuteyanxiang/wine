@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="list.html"></a>
+		<input type="checkbox" id="checkAll">"全选"
+		<ul id="cartList"></ul>
+		<div id="totalPrice"></div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var cart = new Cart();
+			cart.showData("cartList");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	 <link href="css/login.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="logo">
+			<div class="w">
+        <div id="logo">
+            <a href="http://www.zhongjiu.cn/"><img src="img/login.png" alt="Himall" height="60"></a><b></b>
+        </div>
+    </div>
+		</div>
+         <div class=" w1" id="entry">
+        <div class="mc " id="bgDiv">
+            <div id="entry-bg">
+                    <img src="img/loginda.jpg">
+            </div>
+            <div class="tab_content">
+                <ul class="tab_tit">
+                    <li class="active">
+                        <a href="javascript:void(0)" class="sao">扫码登录</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">账户登录</a>
+                    </li>
+                </ul>
+                <div class="tab_cont">
+                    <section>
+                        <div class="saom_login">
+                            <p><img style="width:159px; height:159px;" id="scanimg" src="img/GetQR.gif"></p>
+                            <span>打开<a href="" target="_blank">中酒网App</a></span>
+                            <span class="fr">扫描二维码</span>
+                        </div>
+                        <span><img src="/Areas/Web/Images/sao_2.png"></span>
+                    </section>
+                    <div class="tip-box icon-box">
+                        <span class="succ-icon"></span>
+                        <div class="item-fore al">
+                            <h3>扫描成功!</h3>
+                            <div class="ftx-03">请勿刷新本页面，按手机提示操作！</div>
+                        </div>
+                    </div>
+                    <section class="hidden">
+                        <div class="form ">
+                            <!--<h1>欢迎登陆</h1>-->
+                            <!--tip start-->
+                            <div class="tips ">
+                                <i></i>
+                                <em>公共场所不建议自动登录，以防账号丢失</em>
+                            </div>
+                            <div class="tips_error hidden">
+                                <i></i>
+                                <em>公共场所不建议自动登录，以防账号丢失</em>
+                            </div>
+                            <div id="loginname_error" class="tips_error hidden">
+                                <i></i>
+                                <em>公共场所不建议自动登录，以防账号丢失</em>
+                            </div>
+                            <div id="loginpwd_error" class="tips_error hidden">
+                                <i></i>
+                                <em>公共场所不建议自动登录，以防账号丢失</em>
+                            </div>
+                            <div id="checkCode_error" class="tips_error hidden">
+                                <i></i>
+                                <em></em>
+                            </div>
+                            <div id="usernameone">
+                                <div class="item fore1">
+                                    <div class="item-ifo">
+                                        <div class="text-area">
+                                            <div class="i-name ico"></div>
+                                            <input id="loginname" name="loginname" class="text" placeholder="用户名" tabindex="1" autocomplete="off" sta="2" value="" type="text">
+                                        </div>
+                                        <label id="loginname_succeed" class="blank invisible succeed"></label>
+                                        <label id="loginname_error" class="error" style="display:none;"></label>
+                                    </div>
+                                </div>
+                                <div class="item fore2">
+                                    <div class="item-ifo">
+                                        <div class="text-area">
+                                            <div class="i-pass ico"></div>
+                                            <input id="password" name="password" class="text highlight2" placeholder="密码" tabindex="2" autocomplete="off" sta="2" type="password">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="item fore3" id="checkCodeArea" style="display:none;margin:15px 0 0 0;">
+                                        <div class="item-ifo">
+                                            <input id="checkCodeBox" class="text text-1" name="authcode" tabindex="6" maxlength="4" style="ime-mode:disabled;width: 40%;float: left;margin: 0;text-align: center;text-indent: 0;border: 1px solid #b8c1c8;" sta="0" placeholder="验证码" type="text">
+                                            <label class="img">
+                                                <img id="checkCodeImg" src="/Login/GetCheckCode">
+                                            </label>
+                                            <label class="ftx23 hline">看不清？<br><a href="javascript:void(0)" id="checkCodeChange" class="flk13">换一张</a></label>
+                                            <label id="authcode_succeed" class="blank invisible"></label>
+                                            <label id="checkCode_error" class="error" style="display: none;"></label>
+                                        </div>
+                                    </div>
+                                    <input name="machineNet" id="machineNet" value="" class="hide" type="hidden">
+                                    <input name="machineCpu" id="machineCpu" value="" class="hide" type="hidden">
+                                    <input name="machineDisk" id="machineDisk" value="" class="hide" type="hidden">
+
+                                    <!-- 用户名密码登录 -->
+                                    <div style="width: 100%;">
+                                        <div id="u4" class="ax_image" style="overflow: hidden;clear: both;margin-top: 23px;">
+                                            <img id="u4_img" class="img" src="/Areas/Web/Images/u4.png" style="position:static;float:left;">
+                                            <a style="margin-left:6px;float:left;text-decoration:none" href="javascript:void(0);" onclick="GetVerificationCode()">短信验证码登录</a>
+                                            <div class="item fore4" id="autoentry" style="float: right;width:auto; margin-top:auto;line-height: 20px;">
+                                                <div class="item-ifo" name="__itemifo">
+                                                    <label class="mar" style="font-size: 13px;"><input id="autoLogin" class="checkboxs" name="" type="checkbox" style="color: #333333;font-family: 'Arial Normal', 'Arial';">自动登录</label>
+                                                    <p class="fog" style="float:none;">
+                                                        <a href="/findpassword" style="font-size: 13px;color: #333333;font-family: 'Arial Normal', 'Arial';">忘记密码</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- 用户 密码登录  结束 -->
+                            <!-- 手机号短信验证码登录 -->
+                            <div id="usernametwo" style="display:none;">
+                                <div class="item fore1">
+                                    <div class="item-ifo">
+                                        <div class="text-area">
+                                            <div class="i-name ico"></div>
+                                            <input id="loginnameTwo" name="loginname" class="text" placeholder="手机号码" tabindex="1" autocomplete="off" sta="2" type="text">
+                                        </div>
+                                        <label id="loginname_succeed" class="blank invisible succeed"></label>
+                                        <label id="loginname_error" class="error" style="display:none;"></label>
+                                    </div>
+                                </div>
+                                <div class="fore2">
+                                    <div class="item-ifo" style="margin:9px 0 9px 0;">
+                                        <div id="pullcheckbtn" class="nc-container" data-nc-idx="1">
+<div id="nc_1_wrapper" class="nc_wrapper">
+<div id="nc_1_n1t" class="nc_scale">
+<div id="nc_1__bg" class="nc_bg"></div>
+<span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
+<div id="nc_1__scale_text" class="scale_text"><span class="nc-lang-cnt" data-nc-lang="_startTEXT">向右滑动获取验证码</span></div>
+<div id="nc_1_clickCaptcha" class="clickCaptcha">
+<div class="clickCaptcha_text">
+<b id="nc_1__captcha_text" class="nc_captch_text"></b>
+<i id="nc_1__btn_2" class="nc_iconfont nc_btn_2 btn_refresh"></i>
+</div>
+<div class="clickCaptcha_img"></div>
+<div class="clickCaptcha_btn"></div>
+</div>
+<div id="nc_1_imgCaptcha" class="imgCaptcha">
+<div class="imgCaptcha_text"><input id="nc_1_captcha_input" maxlength="6" type="text" style="ime-mode:disabled"></div>
+<div class="imgCaptcha_img" id="nc_1__imgCaptcha_img"></div>
+<i id="nc_1__btn_1" class="nc_iconfont nc_btn_1 btn_refresh" onclick="document.getElementById('nc_1__imgCaptcha_img').children[0].click()"></i>
+<div class="imgCaptcha_btn">
+<div id="nc_1__captcha_img_text" class="nc_captcha_img_text"></div>
+<div id="nc_1_scale_submit" class="nc_scale_submit"></div>
+</div>
+</div>
+<div id="nc_1_cc" class="nc-cc"></div>
+<i id="nc_1__voicebtn" tabindex="0" role="button" class="nc_voicebtn nc_iconfont" style="display:none"></i>
+<b id="nc_1__helpbtn" class="nc_helpbtn"><span class="nc-lang-cnt" data-nc-lang="_learning">了解新功能</span></b>
+</div>
+<div id="nc_1__voice" class="nc_voice"></div>
+</div>
+</div>
+                                    </div>
+                                </div>
+                                <div class="item fore2">                                  
+                                    <div class="item-ifo">
+                                        <div class="text-area">
+                                            <div class="i-pass ico"></div>
+                                            <input style="width: 175px;" id="passwordTwo" name="password" class="text highlight2" placeholder="短信验证码" tabindex="2" autocomplete="off" sta="2" type="text">
+                                            <p id="sendMobileCode"><a href="javascript:void(0);" id="verificationtime" style="margin-left:175px;height: 38px;width:103px;text-align:center;line-height: 40px;background-color:#e6e2e2;font-weight:600;color:#3d3b3b" onclick="sendMobileCode()">获取验证码</a></p>
+                                        </div>
+                                    </div>
+
+                                    <span id="sendTime" style="display:none;font-size: 12px;font-weight: 400;height:18px;color: #333;left: 0px;margin-top: 10px;text-align: center;line-height: 18px;">验证码已发送到您的手机，2分钟内有效</span>
+                                    <div id="userpassword" class="ax_image" style="overflow: hidden;clear: both;margin-top: 10px;height: 36px;">
+                                        <img id="u4_img" class="img" src="/Areas/Web/Images/u22.png" style="position:static;float:left;width: 18px;height: 16px;">
+                                        <a style="margin-left:6px;text-decoration:none" href="javascript:void(0);" onclick="usernameLanding()">账号密码登录</a>
+                                        <div class="item fore4" id="autoentry" style="float: right;width:auto; margin-top:auto;line-height: 20px;height: 28px;">
+                                            <div class="item-ifo" name="__itemifo">
+                                                <label class="mar" style="font-size: 13px;"><input id="autoLogin" class="checkboxs" name="" type="checkbox" style="color: #333333;font-family: 'Arial Normal', 'Arial';">自动登录</label>
+                                                <p class="fog" style="float:none;">
+                                                    <a href="/findpassword" style="font-size: 13px;color: #333333;font-family: 'Arial Normal', 'Arial';">忘记密码</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item login-btn2013" id="__divlogin">
+                                <input class="btn-img btn-entry" id="loginsubmit" value="登录" type="button">
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="coagent" name="__coagent">
+            <ul>
+                        <li>
+                            <b></b>
+                            <a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=1106027103&amp;redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.QQ&amp;scope=get_user_info&amp;state=Himall.Plugin.OAuth.QQ" class="pdl"><b class="QQ-icon"></b><span>QQ</span></a>
+                            <span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="https://api.weibo.com/oauth2/authorize?client_id=93470565&amp;response_type=code&amp;redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.Weibo" class="pdl"><b class="weibo-icon"></b><span>微博</span></a>
+                            <span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx45a6feedd1adfcfe&amp;redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.WeiXin&amp;response_type=code&amp;scope=snsapi_login&amp;state=hishop#wechat_redirect" class="pdl"><b class="weixin-icon"></b><span>微信</span></a>
+                            <span class="line">|</span>
+                        </li>
+                <li>
+                    <a href="Register" target="_blank" style="color:#b61d1d;">立即注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+	
+	</body>
+</html>

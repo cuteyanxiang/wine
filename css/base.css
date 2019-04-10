@@ -1,0 +1,40 @@
+body,ul,ol,dl,img,p,h1,h2,h3,h4,h5,h6,input,textarea,select,fieldset,legend,ul,ol,dl,dd,th{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+body {
+	font-family: "微软雅黑";
+	color: #333;
+}
+input,img{
+	border: 0;
+	outline: none;
+}
+input[type=button]{
+	cursor: pointer;
+}
+img {
+	display: block;
+}
+ul,ol,li{
+	list-style: none
+}
+a {
+	outline-style: none;
+	color: #333;
+	text-decoration: none
+}
+a:hover {
+	color: #ff7800;
+	text-decoration: underline;
+}
+.flt{
+	float: left;
+}
+.frt{
+	float: right;
+}
+

@@ -434,7 +434,7 @@ a.flk13:visited {
 	position:relative;
 }
 .tips {
-	position: relative;
+	
 	background: #fef4e5;
 	color: #666;
 	border: 1px solid #f6c090;
@@ -607,9 +607,8 @@ a.flk13:visited {
 	right:15px;
 	background:url(../Images/pwd_icons.png) -104px 0 no-repeat;
 }
-.hidden{
-	display:none;
-}
+
+
 .regist-link b{
 	display:block;
 	width:16px;
@@ -702,4 +701,97 @@ a.flk13:visited {
 .ftx-03{
     text-align: center;
     color: #acacac;
+}
+.tab_cont span img {
+    padding-left: 45px;
+}
+img {
+    border: 0 none;
+    font-size: 0;
+    vertical-align: top;
+}
+.tab_cont span img {
+    padding-left: 45px;
+}
+img {
+    border: 0 none;
+    font-size: 0;
+    vertical-align: top;
+}
+section span img{position:absolute;left:42px;top:291px;}
+.yincang{
+	width:400px;
+	height:400px;
+	background:#fff;
+	z-index:2;
+	position:absolute;
+	top:48px;
+	left:20px;
+	display:none;
+}
+.yincang .form{
+	width:274px;
+	height:256px;
+	margin:10px 20px;
+}
+.tips {
+    position: relative;
+    background: #fef4e5;
+    color: #666;
+    border: 1px solid #f6c090;
+    width: 286px;
+    padding: 3px 0 3px 30px;
+    line-height: 15px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tips i {
+    display: block;
+    width: 16px;
+    height: 17px;
+    overflow: hidden;
+    background: url(../img/11pwd_icons.png) -104px -133px no-repeat;
+    position: absolute;
+    left: 10px;
+    z-index: 5;
+}
+.form input{
+	width:274px;
+	height:40px;
+   margin:5px 0px;
+	
+}
+.form input:nth-child(2){
+	margin-bottom:80px;
+}
+.form input:nth-child(3){
+	background:red;
+	border:none;
+}
+.ax_image {
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    }
+    #entry .fore4 {
+    height: 37px;
+    margin-top: 10px;
+    z-index: 3;
+    color: #98999a;
+}
+
+#but{
+	cursor: pointer;
+}
+.form .zhuce{
+	margin-left:98px ;
+	width:100px;
+	height:20px;
+
+	font-size:20px;
+	color:red;
+	
 }

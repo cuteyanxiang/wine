@@ -19,12 +19,13 @@
 			}
 			
 			#imgZoom {
-				float: left;
+				left: 30px;
+				top: 0px;
 				width: 220px;
 				height: 200px;
 				border: 1px solid #CECECE;
 				padding: 5px;
-				margin-left:20px;
+				position:absolute;
 				overflow:hidden;
 				
 			}
@@ -32,6 +33,9 @@
 			.infoZoom {
 				float: left;
 				margin-left: 20px;
+				position: absolute;
+				left: 400px;
+				top: 0px;
 			}
 			
 			.infoZoom p {
@@ -66,20 +70,23 @@
 			#fdqk{
 				width:400px;
 				height:400px;
-				background:red;
-				opacity:.7;
+				background-color: white;
 				position: absolute;
-				left:252px;
+				left:352px;
 				top:0px;
 				display:black;
 				border:1px solid #cecece;
 				overflow:hidden;
+				z-index: 3;
+				display: none;
 				}
 			 
 				#fdqk img{
 					width:400px;
 					height:400px;
-				
+					position: absolute;
+
+					z-index: 3;
 				}
 				#yidong{
 					width:80px;
